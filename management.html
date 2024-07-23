@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Trang chủ</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="css/management.css" />
+    </head>
+    <body>
+        <div class="page">
+            <div class="sidebar">   
+                <a href="/" class="logo">
+                    <h1 class="logo__name">Vegefoods</h1>
+                </a>
+                <ul class="management-nav">
+                    <li class="management-nav__item">
+                        <a href="#!" class="management-nav__link">
+                            <i class="nav__icon fa-solid fa-chart-column"></i>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="management-nav__item">
+                        <a href="/" class="management-nav__link">
+                            <i class="nav__icon fa-solid fa-house"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li class="management-nav__item">
+                        <a href="#!" class="management-nav__link">
+                            <i class="nav__icon fa-solid fa-cart-shopping"></i>
+                            Cart
+                        </a>
+                    </li>
+                    <li class="management-nav__item">
+                        <a href="#!" class="management-nav__link">
+                            <i class="nav__icon fa-solid fa-right-to-bracket"></i>
+                            Log out
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <main class="stats">
+                <div class="stats-top">
+                    <div class="stats__search">
+                        <input type="text" class="stats__input" placeholder="Search for" />
+                        <div class="stats__icon-wrap">
+                            <img src="./img/search.svg" alt="" class="stats__icon" />
+                        </div>
+                    </div>
+                    <div class="stat__action">
+                        <button class="stat__notify">
+                            <i class="fa-solid fa-bell"></i>
+                            <span class="notify__number">3+</span>
+                        </button>
+                        <button class="stat__mall">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span class="notify__number">3+</span>
+                        </button>
+                    </div>
+                    <div class="separate"></div>
+                    <div class="user">
+                        <span class="user__name">Admin</span>
+                        <img src="./img/avatar-1.png" alt="" class="user__avatar" />
+                    </div>
+                </div>
+                <div class="stats-body">
+                    <div class="stats__line">
+                        <h2 class="stats__subtitle">Dashboard</h2>
+                        <button class="stats__action">
+                            <i class="fa-solid fa-download"></i>
+                            Generate report
+                        </button>
+                    </div>
+                    <div class="stats__list">
+                        <div class="stats-item" style="--box-color: #cdb555">
+                            <div class="stats-item__left">
+                                <h3 class="stats-item__title">THU NHẬP (HÀNG THÁNG)</h3>
+                                <span class="stats-item__price">40,000đ</span>
+                            </div>
+                            <div class="stats-item__right"><i class="fa-solid fa-calendar"></i></div>
+                        </div>
+                        <div class="stats-item" style="--box-color: #55cdaf">
+                            <div class="stats-item__left">
+                                <h3 class="stats-item__title">THU NHẬP (HÀNG NĂM)</h3>
+                                <span class="stats-item__price">40,000đ</span>
+                            </div>
+                            <div class="stats-item__right"><i class="fa-solid fa-calendar"></i></div>
+                        </div>
+                        <div class="stats-item" style="--box-color: #00b1ed">
+                            <div class="stats-item__left">
+                                <h3 class="stats-item__title">NHIỆM VỤ</h3>
+                                <span class="stats-item__price">100,000đ</span>
+                            </div>
+                            <div class="stats-item__right"><i class="fa-solid fa-calendar"></i></div>
+                        </div>
+                        <div class="stats-item" style="--box-color: #c353d4">
+                            <div class="stats-item__left">
+                                <h3 class="stats-item__title">YÊU CÂU ĐANG ĐỢI GIẢI QUYÊT</h3>
+                                <span class="stats-item__price">40,000đ</span>
+                            </div>
+                            <div class="stats-item__right"><i class="fa-solid fa-calendar"></i></div>
+                        </div>
+                    </div>
+                    <div class="stats__charts">
+                        <div class="chart__list">
+                            <div class="stats-chart-item">
+                                <canvas id="chart-earning" class="chart-earning"></canvas>
+                            </div>
+                            <div class="stats-chart-item">
+                                <h3 style="font-size: 18px">BÁN CHẠY</h3>
+                                <canvas id="chart-fruit" class="chart-fruit"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chart-bottom">
+                        <h2 class="chart__title">Thống kê các loại hoa quả bán chạy trong tháng 4</h2>
+                        <div class="stats-chart__fruits">
+                            <div class="stats__fruit" style="--chart-height: 10%; --color-fruit: red">
+                                10% <span>Táo</span>
+                            </div>
+                            <div class="stats__fruit" style="--chart-height: 80%; --color-fruit: #82ae46">
+                                80% <span>Mận</span>
+                            </div>
+                            <div class="stats__fruit" style="--chart-height: 50%; --color-fruit: yellow">
+                                50% <span>Cam</span>
+                            </div>
+                            <div class="stats__fruit" style="--chart-height: 30%; --color-fruit: pink">
+                                30% <span>Hồng</span>
+                            </div>
+                            <div class="stats__fruit" style="--chart-height: 70%; --color-fruit: pink">
+                                70% <span>Đào</span>
+                            </div>
+                            <div class="stats__fruit" style="--chart-height: 95%; --color-fruit: pink">
+                                95% <span>Nhãn</span>
+                            </div>
+                            <div class="stats__fruit" style="--chart-height: 15%; --color-fruit: pink">
+                                95% <span>Dưa</span>
+                            </div>
+                            <div class="stats__fruit" style="--chart-height: 25%; --color-fruit: pink">
+                                95% <span>Bưởi</span>
+                            </div>
+                            <div class="stats__fruit" style="--chart-height: 65%; --color-fruit: pink">
+                                95% <span>Mít</span>
+                            </div>
+                            <div class="stats__fruit" style="--chart-height: 67%; --color-fruit: pink">
+                                67% <span>Ổi</span>
+                            </div>
+                            <div class="stats__fruit" style="--chart-height: 28%; --color-fruit: pink">
+                                20% <span>Quýt</span>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+        <script src="chart.js"></script>
+    </body>
+</html>

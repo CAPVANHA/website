@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+    
+}
+.mua{
+    position:relative;
+}
+
+.container{
+    width: 1200px;
+    min-height: 600px;
+    margin: 0 auto;
+
+}
+.row{
+    float: left;
+    width: 100%;
+}
+.row1{
+    float: left;
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}    
+.col20{
+    float: left;
+    padding: 5px 15px;
+    margin: 5px;
+    width: calc(20% - 10px);
+    min-height: 60px;
+    border: 2px red solid;
+    text-align: center;
+}
+.col50{
+    float: left;
+    margin: 10px;
+    width: calc(50% - 20px);
+    min-height: 400px;
+    border: 2px rgb(255, 255, 255) solid;
+    text-align: center;
+}
+.col20:hover{
+    background-color: red;
+    color: aliceblue;
+}
+.col20:hover #format, .col20:hover a{
+    color: white;
+
+}
+
+.col51{
+    font-size:20px;
+    float: left;
+    margin: 10px;
+    width: calc(50% - 20px);
+    min-height: 400px;
+    border: 2px rgb(255, 255, 255) solid;
+}
+.col50 img{
+    width: 80%;
+    
+}
+.product{
+    width: 15%;
+    margin: 0 5px;
+    min-height: 50px;
+    border: 2px rgb(247, 247, 247) solid;
+}
+.product img{
+    width: 100%;
+}
+#format, a{
+    font-size: 15px;
+    color: white;
+}
+/* #tieude h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 32px;
+    color:rgb(255, 255, 255)  
+} */

@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: white;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to right, rgb(0, 99, 35), rgb(0, 223, 0));
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.logo{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.fa-house{
+    padding:10px;
+}
+header ul{
+    display: flex;
+    list-style: none;
+}
+header ul li{
+    padding: 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.header-search{
+    position: relative;
+}
+.header-search input{
+    padding: 10px 40px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+}
+.fa-magnifying-glass{
+    position: absolute;
+    top: 14px;
+    right: 10px;
+}
+
+.content{
+    padding: 100px 50px;
+    display: flex;
+    justify-content: center;
+}
+.gia{
+    display:flex;
+    align-items: center;
+}
+.gia .giamgia{
+    text-decoration: line-through;
+    color:rgb(255, 0, 0);
+    font-size: 12px;
+    padding-left: 5px;
+}
+.fa-bag-shopping{
+    font-size: 20px;
+    padding-right:15px;
+    color:aliceblue;
+}
+.mua{
+    position:relative;
+}
+.card{
+    background-color: rgb(168, 250, 168);
+    display: flex;
+    box-shadow:rgba(149,157,165,0.2) 0px 8px 24px;
+    padding: 10px;
+    border: none;
+    width: 20%;
+    margin: 10px;
+    margin-left: auto;
+    .btn{
+        width: 70%;
+        background-color: rgb(221, 25, 25);
+        color: rgb(255, 255, 255);
+    }
+}
+
+footer{
+    padding: 30px 60px;
+    background-color: rgb(2, 117, 29);
+    color: white;
+    border-top: 1px solid rgb(22, 196, 65);
+}
+footer ul{
+    list-style-type: none;
+}
+#tieude h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 32px;
+    color:grey  
+}
+.fa-carrot{
+    padding:10px;
+}
+.fa-percent{
+    padding:10px;
+}
+.fa-person{
+    padding:10px;
+}
+.fa-basket-shopping{
+    padding:10px;
+}
+
+
